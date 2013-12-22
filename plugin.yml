@@ -1,15 +1,15 @@
 name: Leaders
-version: 0.9
+version: 0.9.1
 main: me.Ryalane.Leaders.Main
 author: Ryalane1
 description: Leaders
 commands:
-    Leader:
+    leader:
         description: "Open or close the gym. /leader <open/close> <gym>"
         usage: /leader <open/close> <gym>
         permission: leaders.leader
         permission-message: "Sorry, you aren't a leader."
-    list:
+    gymlist:
         description: "Lists all leaders. /gym list <gym>"
         usage: /gym list <gym>
         permission: leaders.list
@@ -26,7 +26,7 @@ commands:
         permission-message: "Sorry, you don't have permission to delete a leader."
     Gym:
         description: "View the gym status. /gym <gymname>"
-        usage: /gym <gymname>
+        usage: /gym <gymname> to see if a gyms open or /gym list <gymname> to see who the leaders are of that gym!
         permission: leaders.gym
 permissions:
     leaders.leader:
